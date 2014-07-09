@@ -1,0 +1,10 @@
+---
+# bottle webserver
+bottle:
+  host: 127.0.0.1
+  port: 8081
+  route_statics: True
+  statics_path: /static
+  video_paths:
+    - "E:/Marco/Video/film"
+...
