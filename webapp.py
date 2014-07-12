@@ -25,7 +25,7 @@ def main():
         return "Hello World!"
 
     @app.route('/videos')
-    @view('/views/videos.tpl')
+    @view('views/videos.tpl')
     def videos():
         tpl_vars = dict()
         tpl_vars["video_paths"] = video_paths
