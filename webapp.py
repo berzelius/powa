@@ -31,8 +31,9 @@ def main():
         tpl_vars["video_paths"] = video_paths
         return tpl_vars
 
-    run(app, host=host, port=port)
+    return app, host, port
 
 
 if __name__ == "__main__":
-    main()
+    app, host, port = main()
+    run(app, host=host, port=port)
